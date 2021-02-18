@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 1rem 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+/* utility classes */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.text_center {
+  text-align: center;
+}
+.text_primary {
+  color: #54c5b6;
+}
+/* large */
+.l-heading {
+  font-size: 4rem;
+  margin-top: 60px;
+}
+/* medium  */
+.m-heading {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #aeaeae;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border-radius: 25px;
+  /* we have to remove the border when want to add this class to a button */
+  border: none;
+}
+/* button-color */
+.btn_transparent {
+  background-color: none;
+  color: #fff;
+  border: 1.5px solid #fff;
+  text-transform: uppercase;
+}
+.btn_dark {
+  background-color: #222;
+  color: #fff;
+}
+.btn_dark:hover {
+  background-color: rgb(24, 23, 23);
+}
+/* padding on the y axe: top and bottom */
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+/* padding on the y and x axes */
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+/* background-color */
+.bg-light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+.bg-dark {
+  background-color: #222;
+  color: #fff;
+}
+.bg-primary {
+  background-color: #54c5b6;
+  color: #fff;
+}
+/* #showcase */
+#showcase {
+  height: 100vh;
+  background-image: url("../img/showcase.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+#showcase ul {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+#showcase ul li {
+  text-align: center;
+  width: 80px;
+}
+
+#showcase ul li a i {
+  background-color: #ededed;
+  color: #1e232a;
+  border-radius: 50%;
+  padding: 17px;
+}
+
+#showcase ul li a div {
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0;
+}
+
+#showcase ul li:hover i {
+  background-color: #54c5b6;
+  color: #f9f9f9;
+}
+
+#showcase ul li:hover div {
+  opacity: 1;
+  transform: translateY(9px);
+  transition: all 0.4s ease-in-out;
+}
+
+#showcase #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ededed;
+}
+
+/* what */
+#items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  /*flex: 1;*/
+  text-align: center;
+  padding: 2rem;
+  width: 30%;
+}
+#what #items .item i {
+  background-color: #54c5b6;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/*who*/
+
+#who .container {
+  display: flex;
+}
+#who_text,
+#who_img {
+  flex: 1;
+  margin: 0 1rem;
+}
+#who_img img {
+  width: 80%;
+  height: 200px;
+  /*  border-radius: 50%;*/
+  filter: grayscale(100%);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+#who_img img:hover {
+  filter: grayscale(0);
+  transition: all 0.4s ease-in-out;
+}
+#who_img #img2 {
+  float: right;
+  margin-top: 1rem;
+}
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+#box {
+  width: 50%;
+  padding: 1rem;
+}
+#box h1 {
+  color: #54c5b6;
+}
+
+/*form*/
+
+#form {
+  background: url("../img/bg_menu_box.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+}
+#form .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+#form_text {
+  flex: 1;
+}
+#form_text {
+  color: #fff;
+}
+#form_text h1 {
+  font-size: 2.5rem;
+}
+#form_text p {
+  font-size: 1.25rem;
+}
+form {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+form .form_group {
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+input,
+textarea,
+select {
+  padding: 0.25rem;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+footer {
+  background-color: #353866;
+  text-align: center;
+  color: #e3ecd4;
+}
+footer #footer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+table td {
+  padding: 1rem;
+}
+th {
+  color: #54c5b6;
+}
+footer #copyright {
+  padding: 1rem;
+  background-color: #20223d;
+}
+footer i {
+  color: #f9f9f9;
+  border-radius: 50px;
+  padding: 5px;
+}
